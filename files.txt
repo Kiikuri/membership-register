@@ -1,0 +1,83 @@
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/rihumwv = Suunnitelma TIMiss‰
+
+
+Suunnitelman kuvat
+
+kuvat/p‰‰ikkuna.png          = Ohjelman p‰‰ikkuna (Scene Builder)
+kuvat/UusiK‰ytt‰j‰.png       = Uuden j‰senen lis‰‰minen (SB)
+kuvat/UusiK‰ytt‰j‰Virhe.png  = Virhe ilmoitus uuden j‰senen lis‰‰misess‰ (SB)
+kuvat/PoistaJ‰sen.png        = J‰senen poistamisen varmistus (SB)
+kuvat/Lis‰‰Ottelu.png        = Ottelun lis‰‰minen (SB)
+kuvat/PoistaOttelu.png       = Ottelun poistamisen varmistus (SB)
+kuvat/Muokkaa.png            = J‰senen tietojen muokkaaminen (SB)
+kuvat/MuokkaaVirhe.png       = Virheilmoitus j‰senen tietojen muokkamisessa (SB)
+kuvat/Tietorakenne.txt       = Tietorakenteen diagrammi(linkki kuvaan)
+kuvat/Tietorakenne.xml       = Tietorakenteen diagrammi(alkuper‰inen)
+kuvat/Tietorakenne.png       = Tietorakenteen diagrammi kuva
+
+Ajettavat ohjelmat
+
+rihumwv/rihumwv.jar = Ohjelman jar tiedosto (heitt‰‰ virhett‰)
+
+
+Ohjelman toiminnot
+
+rihumwv/src/fxht/HT.java                       = Ohjelman k‰ynnist‰v‰ p‰‰luokka
+rihumwv/src/fxht/HTGUIController.java          = K‰yttˆliittym‰n ohjain
+rihumwv/src/fxht/InfoGUIController.java        = Infopaneelin ohjain
+rihumwv/src/fxht/LisaaottGUIController.java    = Ottelun luonnin ohjain
+rihumwv/src/fxht/MuokkaaGUIController.java     = J‰senen tietojen muokkaamisen ohjain
+rihumwv/src/fxht/SeuranNimiGUIController.java  = Seuran valinnan/luonnin/poiston ohjain
+rihumwv/src/fxht/TulostusGUIController.java    = Tulostuksen ohjain
+
+
+K‰yttˆliittym‰n ulkoasu JavaFX:ll‰
+
+rihumwv/src/fxht/HT.css                    = Tyylitiedosto
+rihumwv/src/fxht/HTGUIView.fxml            = Varsinainen k‰yttˆliittym‰
+rihumwv/src/fxht/HTGUIViewEiToimi.fxml     = Ei Toimi varoitus
+rihumwv/src/fxht/HTGUIViewInfo.fxml        = Tietoja ohjelmasta
+rihumwv/src/fxht/HTGUIViewLisaaott.fxml    = Ottelun lis‰‰minen
+rihumwv/src/fxht/HTGUIViewMuokkaa.fxml     = J‰senen tietojen muokkaaminen
+rihumwv/src/fxht/HTGUIViewSeuranNimi.fxml  = Seuran valinta/luonti/poisto
+rihumwv/src/fxht/HTGUIViewTulostus.fxml    = Tulostus
+
+
+Tietorakenteiden k‰sittely koodissa
+
+rihumwv/src/ht/Seura.java            = varsinainen tietokanta, jonka kautta kaikki muutokset tehd‰‰n
+rihumwv/src/ht/Jasen.java            = j‰sen luokka
+rihumwv/src/ht/Jasenet.java          = j‰senet luokka
+rihumwv/src/ht/Joukkue.java          = joukkue luokka
+rihumwv/src/ht/Joukkueet.java        = joukkueet luokka
+rihumwv/src/ht/Ottelu.java           = ottelu luokka
+rihumwv/src/ht/Ottelut.java          = ottelut luokka
+rihumwv/src/ht/Virhe.java            = Virhe luokka
+rihumwv/src/ht/Testit.java           = Tarkistukset j‰senien ja otteluiden lis‰‰miseen
+rihumwv/data                         = Ohjelman data. Seurojen kansiot, joissa on tietokantojen tiedostot
+rihumwv/data/<seuran nimi>/Jasenet   = J‰senistˆ tiedostossa
+rihumwv/data/<seuran nimi>/Ottelut   = Ottelut tiedostossa
+rihumwv/data/<seuran nimi>/Joukkueet = Joukkueet tiedostossa
+
+
+Muita tiedostoja
+            
+rihumwv/.classpath                            = Eclipsen luokkapolku              
+rihumwv/.project                              = Eclipsen projekti             
+rihumwv/build.fxbuild                         = Luo tiedoston, jota Ant build tool k‰ytt‰‰
+rihumwv/.settings/org.eclipse.jdt.core.prefs  = Eclipsen k‰‰nt‰j‰n varoitukset
+rihumwv/build.xml                             = Ohjelman build scripti 
+
+
+Poistetut tiedostot:
+
+rihumwv/src/fxht/HTGUIViewPoistakayt.fxml      = J‰senen poistamisen varmistus
+rihumwv/src/fxht/HTGUIViewPoistaott.fxml       = Ottelun poistamisen varmistus
+rihumwv/src/fxht/HTGUIViewPoistuminen.fxml     = Ohjelman sulkemisen varmistus
+rihumwv/src/fxht/HTGUIViewUuskaut.fxml         = J‰senen lis‰‰minen
+rihumwv/src/fxht/PoistakaytGUIController.java  = J‰senen poistamisen ohjain
+rihumwv/src/fxht/PoistaottGUIController.java   = Ottelun poistamisen ohjain
+rihumwv/src/fxht/PoistuminenGUIController.java = Poistumis viestin ohjain
+rihumwv/src/fxht/UuskautGUIController.java     = Uuden j‰senen luonnin ohjain
+rihumwv/src/fxht/HuoneGUIView.fxml             = roskatiedosto, joka on tullut vahingossa.
+
