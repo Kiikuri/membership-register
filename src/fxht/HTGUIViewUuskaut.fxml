@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxht.UuskautGUIController">
+   <center>
+      <Pane BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Syötä tiedot" textAlignment="CENTER">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Etunimi">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti0" onKeyReleased="#UKTeksti0Change" promptText="Esim. Matti" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Sukunimi">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="UKTeksti1" onKeyReleased="#UKTeksti1Change" promptText="Esim. Kuusinen" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Hetu">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti2" onKeyReleased="#UKTeksti2Change" promptText="Esim. 010111-111A">
+                           <effect>
+                              <ColorAdjust hue="0.07" />
+                           </effect></TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Katuosoite">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti3" onKeyReleased="#UKTeksti3Change" promptText="Esim. Lutikankatu 1a" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Postinumero">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti4" onKeyReleased="#UKTeksti4Change" promptText="Esim. 40100" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Postiosiote">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti5" onKeyReleased="#UKTeksti5Change" promptText="Esim. Jyväskylä" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Puhelin">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti6" onKeyReleased="#UKTeksti6Change" promptText="Esim. 0400 582 125" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Päiväys">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti7" onKeyReleased="#UKTeksti7Change" promptText="Esim. 01.01.2001" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Joukkue">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="UKTeksti8" onKeyReleased="#UKTeksti8Change" promptText="Esim. Hepa" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="UusiKVirhe">
+                     <padding>
+                        <Insets left="25.0" right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <ColorAdjust brightness="-0.36" contrast="-1.0" hue="0.01" saturation="1.0" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="135.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="UusiKLisaa" mnemonicParsing="false" onAction="#UusiKLisaaAction" text="Lisää Käyttäjä">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="45.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="UusiKPeruuta" mnemonicParsing="false" onAction="#UusiKPeruutaAction" text="Peruuta" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

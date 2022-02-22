@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxht.LisaaottGUIController">
+   <center>
+      <Pane prefHeight="207.0" prefWidth="321.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="192.0" prefWidth="307.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Syötä ottelun tiedot" textAlignment="CENTER">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="100.0" text="Päiväys">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="OttelunPaiva" onAction="#OttelunPaivaAction" promptText="21.02.2019" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="100.0" text="Aika">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="OttelunAikaAloitus" onAction="#OtelunAikaAloitusAction" prefHeight="25.0" prefWidth="45.0" promptText="19:00" />
+                        <Label prefHeight="14.0" prefWidth="12.0" text="-">
+                           <padding>
+                              <Insets bottom="-5.0" left="10.0" right="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="OttelunAikaLopetus" onAction="#OtelunAikaLopetusAction" prefHeight="25.0" prefWidth="45.0" promptText="22:00" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="100.0" text="Paikka">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="OttelunPaikka" onAction="#OttelunPaivaAction" promptText="Hartwall areena" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="100.0" text="Kotijoukkue">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Kotijoukkue" onAction="#OttelunPaivaAction" promptText="Helsingin palloseura" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="100.0" text="Vierasjoukkue">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Vierasjoukkue" onAction="#OttelunPaivaAction" promptText="Haminan nuoret" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="LabelVirhe" prefHeight="17.0" prefWidth="247.0" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <GridPane prefHeight="37.0" prefWidth="321.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="OttelunLisays" mnemonicParsing="false" onAction="#OttelunLisaysAction" prefWidth="50.0" text="Lisää">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="70.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="OttelunPeruuta" mnemonicParsing="false" onAction="#OttelunPeruutaAction" text="Peruuta" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ComboBoxChooser?>
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import fi.jyu.mit.fxgui.StringGrid?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="487.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxht.HTGUIController">
+   <center>
+      <Pane prefHeight="772.0" prefWidth="286.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" prefWidth="150.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Hakuehto" textAlignment="CENTER">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <TextField fx:id="Hakuehto" alignment="CENTER" onAction="#HakuehtoAction" promptText="Hae jäsentä" />
+                     </children>
+                  </HBox>
+                  <HBox />
+                  <ComboBoxChooser fx:id="JasenetLajittelu" onAction="#JasenetLajitteluAction" prefHeight="25.0" prefWidth="150.0" rivit="">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ComboBoxChooser>
+                  <Label text="Jäsenet">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="192.0" layoutY="-1.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Jäsenen tiedot" textAlignment="CENTER">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="105.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Etunimi">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu0" editable="false" promptText="Etunimi" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Sukunimi">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Menu1" editable="false" promptText="Sukunimi" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Hetu">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu2" editable="false" promptText="esim. 010111-111A" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Katuosoite">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu3" editable="false" promptText="Osoite" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Postinumero">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu4" editable="false" promptText="Esim. 00100" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Postiosiote">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu5" editable="false" promptText="Kaupunki" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Puhelin">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu6" editable="false" promptText="Esim. 0400 111111" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Jäsenmaksu">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu7" editable="false" promptText="Ok" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Liittynyt">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu8" editable="false" promptText="01.01.2001" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="80.0" text="Joukkue">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="Menu9" editable="false" promptText="Joukkueen nimi" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="450.0" layoutY="-1.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Tulevat ottelut" textAlignment="CENTER">
+                           <padding>
+                              <Insets left="169.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="MenuJoukkueHaku" alignment="CENTER" onAction="#MenuJoukkueHakuAction" prefHeight="25.0" prefWidth="517.0" promptText="Hae ottelua" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+            <HBox layoutX="193.0" layoutY="306.0" />
+            <Button fx:id="MuokkaaJasen" layoutX="282.0" layoutY="331.0" mnemonicParsing="false" onAction="#MuokkaaJasenAction" text="Muokkaa Tietoja" />
+            <ScrollPane fx:id="PanelJasenet" hbarPolicy="NEVER" layoutX="15.0" layoutY="89.0" prefHeight="320.0" prefWidth="149.0">
+               <content>
+                  <ListChooser fx:id="chooserJasenet" prefHeight="320.0" prefWidth="150.0" />
+               </content>
+            </ScrollPane>
+            <StringGrid fx:id="OttelutSG" editable="true" layoutX="450.0" layoutY="43.0" prefHeight="340.0" prefWidth="518.0" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu fx:id="MenubarTiedosto" mnemonicParsing="false" text="Tiedosto">
+                  <items>
+                        <MenuItem fx:id="TiedostoTulosta" mnemonicParsing="false" onAction="#TiedostoTulostaAction" text="Tulosta" />
+                    <MenuItem fx:id="TiedostoTallenna" mnemonicParsing="false" onAction="#TiedostoTallennaAction" text="Tallenna" />
+                        <MenuItem fx:id="TiedostoAvaa" mnemonicParsing="false" onAction="#TiedostoAvaaAction" text="Avaa" />
+                        <MenuItem fx:id="TiedostoLopeta" mnemonicParsing="false" onAction="#TiedostoLopetaAction" text="Lopeta" />
+                  </items>
+                </Menu>
+                <Menu fx:id="MenubarApua" mnemonicParsing="false" text="Apua">
+                  <items>
+                    <MenuItem fx:id="ApuaApua" mnemonicParsing="false" onAction="#ApuaApuaAction" text="Apua" />
+                        <MenuItem fx:id="ApuaInfo" mnemonicParsing="false" onAction="#ApuaInfoAction" text="Info" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="UusiJasen" mnemonicParsing="false" onAction="#UusiJasenAction" text="Uusi jäsen">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="TallennaMenu" mnemonicParsing="false" onAction="#TallennaMenuAction" text="Tallenna">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="180.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="PoistaJasen" mnemonicParsing="false" onAction="#PoistaJasenAction" text="Poista jäsen">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="90.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="PoistaOttelu" mnemonicParsing="false" onAction="#PoistaOtteluAction" text="Poista ottelu" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="70.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="LisaaOttelu" mnemonicParsing="false" onAction="#LisaaOtteluAction" text="Lisää ottelu" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="-20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
